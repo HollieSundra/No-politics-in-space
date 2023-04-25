@@ -44,6 +44,10 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
+      <div class="background-container">
+        <div class="stars"></div>
+        <div class="twinkling"></div>
+        </div>
         <div className="flex-column justify-flex-start min-100-vh">
           <Header />
           <div className="container">
