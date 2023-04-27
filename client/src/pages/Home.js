@@ -25,7 +25,8 @@ const Home = () => {
           ) : (
             <ThoughtList
               thoughts={thoughts}
-              title="No Politics In Space..."
+              title="HoloNet"
+
             />
           )}
         </div>

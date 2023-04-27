@@ -25,6 +25,11 @@ body {
   margin: 0;
 }
 
+@font-face {
+  font-family: 'DISTGRG_';
+  src: url(./fonts/DISTGRG_-webfont.woff) format('woff');
+}
+
 /* code for the animated background */
 @keyframes move-background {
   from {
@@ -528,12 +533,13 @@ button {
 }
 
 a {
-  color: #1b89bc;
+  
+  color: #bcb41b;
   text-decoration: none;
 }
 
 a:hover {
-  color: #065b83;
+  color: #bcb41b;
   text-decoration: underline;
 }
 
@@ -1004,7 +1010,7 @@ a:hover {
 }
 
 .text-light {
-  color: #0b8ad9 !important;
+  color: #daec14 !important:
 }
 
 .text-dark {
@@ -1025,7 +1031,8 @@ a:hover {
 
 /* BACKGROUND UTILS */
 .bg-primary {
-  background-color: #2d3e50 !important;
+  font-family: 'DISTGRG_';
+  background-color: #00000020 !important;
 }
 
 .bg-info {
@@ -1087,13 +1094,13 @@ a:hover {
   border-radius: 0.3rem;
   border: 1px solid transparent;
   outline: none;
-  color: #1a1a1a;
-  background-color: #aeaeae;
+  color: #1a1a1a3c;
+  background-color: #aeaeae1c;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
 .btn:hover {
-  background-color: #cecece;
+  background-color: #cecece00;
 }
 
 .btn.btn-squared {
@@ -1117,12 +1124,12 @@ a:hover {
 }
 
 .btn.btn-primary {
-  background-color: #2d3e50;
-  color: #d9e9e8;
+  background-color: #00000020;
+  color: #d9ee14;
 }
 
 .btn.btn-primary:hover {
-  background-color: #57779a;
+  background-color: #00000020;
 }
 
 .btn.btn-danger {
@@ -1196,9 +1203,9 @@ a:hover {
 
 .card .card-header {
   padding: 0.375rem;
-  background-color: rgba(0, 0, 0, 0.39) !important;
-  border-radius: 8px;
-  color: #0eb2ed !important;
+  background-color: #2d3e50;
+  color: #d9e9e8;
+  text-align: center;
 }
 
 .card .card-body {
