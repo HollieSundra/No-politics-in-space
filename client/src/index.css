@@ -23,10 +23,16 @@ body {
   margin: 0;
 }
 
+header {
+  background-color: #000000;
+}
+
 @font-face {
   font-family: 'DISTGRG_';
   src: url(./fonts/DISTGRG_-webfont.woff) format('woff');
 }
+
+
 
 /* code for the animated background */
 @keyframes move-background {
@@ -70,7 +76,9 @@ body {
 }
 
 .background-container {
+  background-color: #000000;
   position: fixed;
+  margin-top: 6%;
   top: 0;
   left: 0;
   bottom: 0;
@@ -78,7 +86,7 @@ body {
 }
 
 .stars {
-  background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+  background: rgba(0, 0, 0, 0.467) url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -105,24 +113,6 @@ body {
   -webkit-animation: move-background 70s linear infinite;
   animation: move-background 70s linear infinite;
 
-}
-
-.clouds {
-  width: 10000px;
-  height: 100%;
-  background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/clouds_repeat.png") repeat;
-  background-size: 1000px 1000px;
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: 3;
-
-  -moz-animation: move-background 150s linear infinite;
-  -ms-animation: move-background 150s linear infinite;
-  -o-animation: move-background 150s linear infinite;
-  -webkit-animation: move-background 150s linear infinite;
-  animation: move-background 150s linear infinite;
 }
 
 img {
@@ -486,6 +476,10 @@ h6 {
   line-height: 1.25;
 }
 
+.commentthought {
+  color: white;
+}
+
 h1 {
   font-size: 2.25rem;
 }
@@ -502,6 +496,7 @@ h3 {
 
 h4 {
   font-size: 1.5rem;
+  color: white;
 }
 
 h5 {
@@ -618,10 +613,6 @@ a:hover {
 
 .mb-3 {
   margin-bottom: 1rem !important;
-}
-
-.mb-4 {
-  margin-bottom: 1.375rem !important;
 }
 
 .mb-5 {
@@ -1037,7 +1028,6 @@ a:hover {
 /* BACKGROUND UTILS */
 .bg-primary {
   font-family: 'DISTGRG_';
-  background-color: #00000020 !important;
 }
 
 .bg-info {
@@ -1351,6 +1341,7 @@ label form [type='radio'] {
 
 .justify-center {
   justify-content: center;
+  background-color: black;
 }
 
 .align-start {
