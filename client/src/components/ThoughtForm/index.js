@@ -41,7 +41,7 @@ const ThoughtForm = () => {
       const { data } = await addThought({
         variables: {
           thoughtText,
-          thoughtAuthor: Auth.getProfile().data.username,
+          thoughtAuthor: Auth.getProfile(data).data.username,
         },
       });
 
@@ -62,7 +62,7 @@ const ThoughtForm = () => {
 
   return (
     <div>
-      <h3>What's on your techy mind?</h3>
+      <h3 class="">What's on your Porgy mind?</h3>
 
       {Auth.loggedIn() ? (
         <>
@@ -89,7 +89,7 @@ const ThoughtForm = () => {
             </div>
 
             <div className="col-12 col-lg-3">
-              <button className="btn btn-primary btn-block py-3" type="submit">
+              <button className="btn btn-primary btn-block py-3 addthought" type="submit">
                 Add Thought
               </button>
             </div>
