@@ -41,6 +41,7 @@ const client = new ApolloClient({
   link: authLink.concat(httpLink),
   cache: new InMemoryCache(),
 });
+-
 
 function App() {
   return (
@@ -85,6 +86,8 @@ function App() {
           </div>
           <Footer />
         </div>
+
+        
       </Router>
     </ApolloProvider>
   );

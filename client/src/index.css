@@ -25,7 +25,7 @@ body {
 
 @font-face {
   font-family: 'DISTGRG_';
-  src: url(./fonts/DISTGRG_-webfont.woff) format('woff');
+  src: url(./assets//fonts/DISTGRG_-webfont.woff) format('woff');
 }
 
 /* code for the animated background */
@@ -1162,8 +1162,8 @@ a:hover {
 }
 
 .btn.btn-light {
-  background-color: #d9e9e8;
-  color: #1a1a1a;
+  background-color: #00000020;
+  color: #e0b724d6;
 }
 
 .btn.btn-light:hover {
