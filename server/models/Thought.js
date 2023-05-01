@@ -6,7 +6,7 @@ const thoughtSchema = new Schema({
     type: String,
     required: 'You need to leave a thought!',
     minlength: 1,
-    maxlength: 280,
+    maxlength: 800,
     trim: true,
   },
   thoughtAuthor: {
@@ -25,7 +25,8 @@ const thoughtSchema = new Schema({
         type: String,
         required: true,
         minlength: 1,
-        maxlength: 280,
+        maxlength: 800
+        ,
       },
       commentAuthor: {
         type: String,
