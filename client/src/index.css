@@ -1931,7 +1931,7 @@ label form [type='radio'] {
     align-content: center;
   }
 }
-
+/* Signup-page EDITS*/
 .pics {
   flex-direction: row;
   display: flex;
@@ -1939,14 +1939,14 @@ label form [type='radio'] {
   position: relative;
   }
 
-.ewok {
+.ewokRight {
   display: flex;
   height: 100px;
   width: auto;
   position: absolute;
 }
 
-.ewok1 {
+.ewokLeft {
   display: flex;
   height: 100px;
   width: auto;
@@ -1984,7 +1984,7 @@ body {
 }
 
 .center{
-	padding-top: 0%; 
+	padding-top: 3%; 
 }
 
 .dialog-1{
