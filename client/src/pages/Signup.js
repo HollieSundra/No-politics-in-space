@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import ewokcute from '../img/ewokcute.png';
-import ewokcute1 from '../img/ewokcute.png';
+import ewokcute from '../assets/img/ewokcute.png';
+import ewokcute1 from '../assets/img/ewokcute.png';
 
-import jedi from '../img/jedi.jpg';
+import jedi from '../assets/img/jedi.jpg';
 
 import { useMutation } from '@apollo/client';
 import { ADD_USER } from '../utils/mutations';
@@ -41,17 +41,40 @@ const Signup = () => {
     } catch (e) {
       console.error(e);
     }
+
   };
+
+
 
   return (
     <main className="flex-row justify-center mb-4">
       <div className="col-12 col-lg-10">
-      <img src={ewokcute} alt="" className="ewok"/>
-      <img src={ewokcute1} alt="" className="ewok1"/>
+        <div class="box">
+          <div class="center">
+            <div class="dialog-1">Not sure what your Jedi name is?
+            <br></br>
+            Try this for your first name!
+            <br></br>
+            1. You must take the first 3 letters of your last name.
+            2. Then you must take the first 2 letters of your first name.
+              <div class="left-point"></div>
+            </div>
+            <div class="dialog-2">  
+            Try this for your last name!
+            <br></br>
+            You must take the first 3 letters of your mother's maiden name.
+              <div class="right-point"></div>
+            </div>
+          </div>
+        </div>
+        <div className='theEwoks'>
+        <img src={ewokcute} alt="" className="ewokRight" />
+        <img src={ewokcute1} alt="" className="ewokLeft" />
+        </div>
         <div className="card">
           <h4 className="card-header bg-dark text-light p-2">We would be honored if you would join us.</h4>
           <div className="card-body">
-          
+
             {data ? (
               <p>
                 Success! {' '}
@@ -102,10 +125,11 @@ const Signup = () => {
         </div>
       </div>
       <div className='pics'>
-      <img src={jedi} alt="" className="jedi"/>
+        <img src={jedi} alt="" className="jedi" />
       </div>
     </main>
-  );
+  )
 };
+
 
 export default Signup;
