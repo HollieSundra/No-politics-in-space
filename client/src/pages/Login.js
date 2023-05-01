@@ -5,6 +5,11 @@ import { LOGIN_USER } from '../utils/mutations';
 
 import Auth from '../utils/auth';
 
+
+import ewokcute from '../assets/img/ewokcute.png';
+import ewokcute1 from '../assets/img/ewokcute.png';
+
+
 const Login = (props) => {
   const [formState, setFormState] = useState({ email: '', password: '' });
   const [login, { error, data }] = useMutation(LOGIN_USER);
@@ -43,8 +48,8 @@ const Login = (props) => {
   return (
     <main className="flex-row justify-center mb-4">
       <div className="col-12 col-lg-10">
-        <img src={ewokcute} alt="" className="ewok" />
-        <img src={ewokcute1} alt="" className="ewok1" />
+        <img src={ewokcute} alt="" className="ewokRight" />
+        <img src={ewokcute1} alt="" className="ewok1Left" />
         <div className="card">
           <h4 className="card-header bg-dark text-light p-2">Login</h4>
           <div className="card-body">
