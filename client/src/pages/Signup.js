@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
+import ewokcute from '../img/ewokcute.png';
+import ewokcute1 from '../img/ewokcute.png';
+
+import jedi from '../img/jedi.jpg';
+
 import { useMutation } from '@apollo/client';
 import { ADD_USER } from '../utils/mutations';
 
@@ -41,9 +46,12 @@ const Signup = () => {
   return (
     <main className="flex-row justify-center mb-4">
       <div className="col-12 col-lg-10">
+      <img src={ewokcute} alt="" className="ewok"/>
+      <img src={ewokcute1} alt="" className="ewok1"/>
         <div className="card">
-          <h4 className="card-header bg-dark text-light p-2">Join Us!</h4>
+          <h4 className="card-header bg-dark text-light p-2">We would be honored if you would join us.</h4>
           <div className="card-body">
+          
             {data ? (
               <p>
                 Success! {' '}
@@ -53,7 +61,7 @@ const Signup = () => {
               <form onSubmit={handleFormSubmit}>
                 <input
                   className="form-input"
-                  placeholder="Your username"
+                  placeholder="Enter Your Jedi Name"
                   name="username"
                   type="text"
                   value={formState.name}
@@ -61,7 +69,7 @@ const Signup = () => {
                 />
                 <input
                   className="form-input"
-                  placeholder="Your email"
+                  placeholder="Enter Your Email"
                   name="email"
                   type="email"
                   value={formState.email}
@@ -92,6 +100,9 @@ const Signup = () => {
             )}
           </div>
         </div>
+      </div>
+      <div className='pics'>
+      <img src={jedi} alt="" className="jedi"/>
       </div>
     </main>
   );
