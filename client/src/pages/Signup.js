@@ -56,11 +56,9 @@ const Signup = () => {
             Try this for your first name!
             <br></br>
             1. You must take the first 3 letters of your last name.
-             
             2. Then you must take the first 2 letters of your first name.
               <div class="left-point"></div>
             </div>
-
             <div class="dialog-2">  
             Try this for your last name!
             <br></br>
@@ -69,9 +67,10 @@ const Signup = () => {
             </div>
           </div>
         </div>
-        <img src={ewokcute} alt="" className="ewok" />
-        <img src={ewokcute1} alt="" className="ewok1" />
-
+        <div className='theEwoks'>
+        <img src={ewokcute} alt="" className="ewokRight" />
+        <img src={ewokcute1} alt="" className="ewokLeft" />
+        </div>
         <div className="card">
           <h4 className="card-header bg-dark text-light p-2">We would be honored if you would join us.</h4>
           <div className="card-body">
