@@ -89,6 +89,9 @@ const Login = (props) => {
           </div>
         </div>
       </div>
+      <div className="pic">
+        <img src={jedi} alt="" className="jedi" />
+      </div>
     </main>
   );
 };
