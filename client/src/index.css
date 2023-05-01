@@ -1963,91 +1963,70 @@ label form [type='radio'] {
   align-content: center;
 }
 
-/* (A) SPEECH BOX */
-.speech {
-  /* (A1) FONT */
-   font-size: 1.1em;
- 
-  /* (A2) COLORS */
-  color: #fff;
-  background: #a53d38;
- 
-  /* (A3) DIMENSIONS + POSITION */
-  position: relative;
-  padding: 20px;
-  border-radius: 10px;
-  margin: 50px auto;
-  max-width: 320px;
+:root {
+  --main-light-color: rgb(3, 216, 249);
+  --main-dark-color: #ffffff;
+  --main-background-color: black;
 }
 
-/* (B) ADD SPEECH "CALLOUT TAIL" */
-/* (B1) USE ::AFTER TO CREATE THE "TAIL" */
-.speech::after {
-  /* (B1-1) ATTACH TRANSPARENT BORDERS */
-  content: "";
-  border: 20px solid transparent;
- 
-  /* (B1-2) NECESSARY TO POSITION THE "TAIL" */
-  position: absolute;
-}
- 
-
-
-/* (C) DIFFERENT TAIL POSITIONS */
-/* (C1) TOP */
-.top.speech::after {
-  /* (C1-1) UP TRIANGLE */
-  border-bottom-color: #a53d38;
-  border-top: 0;
- 
-  /* (C1-2) POSITION AT TOP */
-  top: -20px; left: 50%;
-  margin-left: -20px;
-}
- 
-/* (C2) LEFT */
-.left.speech::after {
-  /* (C2-1) LEFT TRIANGLE */
-  border-right-color: #a53d38;
-  border-left: 0;
- 
-  /* (C2-2) POSITION AT LEFT */
-  left: -20px; top: 50%;
-  margin-top: -20px;
-}
- 
-/* (C3) RIGHT */
-.right.speech::after {
-  /* (C3-1) RIGHT TRIANGLE */
-  border-left-color: #a53d38;
-  border-right: 0;
- 
-  /* (C3-2) POSITION AT RIGHT */
-  right: -20px; top: 50%;
-  margin-top: -20px;
-}
-
-/* (X) THE REST DOES NOT MATTER - COSMETICS */
-/* PAGE & BODY */
-* {
-  font-family: arial, sans-serif;
-  box-sizing: border-box;
-}
 body {
-  display: flex;
-  align-items: center; justify-content: center;
-  min-height: 100vh;
-  background-image: url(https://images.unsplash.com/photo-1600172454132-ada7faa101cf?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0NjU0ODA0Mg&ixlib=rb-1.2.1&q=85);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  text-align: center;
+	background-color: var(--main-background-color);
 }
 
-/* WIDGET */
-.widget-wrap {
-  max-width: 500px;
-  padding: 30px;
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.4);
+.box {
+	width: 90vh;
+	height: 10vh;
+	/* border: solid black; */
+	margin: auto;
+	position: relative;
+	display: block;
+  padding: 5%;
+}
+
+.center{
+	padding-top: 0%; 
+}
+
+.dialog-1{
+  	height: 77%;
+  	width: 63%;
+  	background-color: var(--main-dark-color);
+  	position: absolute;
+  	border-radius: 5%;
+    left: -20%;
+    text-align: center;
+}
+
+.left-point{
+	width: 0;
+	height: 0;
+	border-left: 1vh solid transparent;
+	border-right: 1vh solid transparent;
+	border-top: 9vh solid var(--main-dark-color);
+	position: absolute;
+	top: 45%;
+	left: -7%;
+	transform: rotate(60deg);
+}
+
+.dialog-2{
+  	height: 55%;
+  	width: 57%;
+  	background-color: var(--main-light-color);
+  	position: absolute;
+  	border-radius: 5%;
+  	right: -20%;
+    text-align: center;
+}
+
+.right-point{
+	width: 0;
+	height: 0;
+	border-left: 1vh solid transparent;
+	border-right: 1vh solid transparent;
+	border-top: 9vh solid var(--main-light-color);
+	position: absolute;
+	top: 45%;
+	right: -8%;
+	transform: rotate(-60deg);
 }
