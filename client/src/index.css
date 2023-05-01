@@ -1962,3 +1962,71 @@ label form [type='radio'] {
   position: relative;
   align-content: center;
 }
+
+:root {
+  --main-light-color: rgb(3, 216, 249);
+  --main-dark-color: #ffffff;
+  --main-background-color: black;
+}
+
+body {
+	background-color: var(--main-background-color);
+}
+
+.box {
+	width: 90vh;
+	height: 10vh;
+	/* border: solid black; */
+	margin: auto;
+	position: relative;
+	display: block;
+  padding: 5%;
+}
+
+.center{
+	padding-top: 0%; 
+}
+
+.dialog-1{
+  	height: 77%;
+  	width: 63%;
+  	background-color: var(--main-dark-color);
+  	position: absolute;
+  	border-radius: 5%;
+    left: -20%;
+    text-align: center;
+}
+
+.left-point{
+	width: 0;
+	height: 0;
+	border-left: 1vh solid transparent;
+	border-right: 1vh solid transparent;
+	border-top: 9vh solid var(--main-dark-color);
+	position: absolute;
+	top: 45%;
+	left: -7%;
+	transform: rotate(60deg);
+}
+
+.dialog-2{
+  	height: 55%;
+  	width: 57%;
+  	background-color: var(--main-light-color);
+  	position: absolute;
+  	border-radius: 5%;
+  	right: -20%;
+    text-align: center;
+}
+
+.right-point{
+	width: 0;
+	height: 0;
+	border-left: 1vh solid transparent;
+	border-right: 1vh solid transparent;
+	border-top: 9vh solid var(--main-light-color);
+	position: absolute;
+	top: 45%;
+	right: -8%;
+	transform: rotate(-60deg);
+}
