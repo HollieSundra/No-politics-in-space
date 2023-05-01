@@ -1,6 +1,5 @@
 # No-Politics-In-Space
 
-
 ## Install steps
 
 To reproduce the problem, follow these steps:
