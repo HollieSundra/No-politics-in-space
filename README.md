@@ -1,6 +1,17 @@
 # No-Politics-In-Space
 
-## Install steps
+## Table of Contents [TOC]
+1. Description
+2. Installation Steps
+3. Usage
+4. Collaborators
+5. Licenses
+
+## Description
+
+Fully functional forum application for Star Wars fans.
+
+## Installation Steps
 
 To reproduce the problem, follow these steps:
 
@@ -25,7 +36,12 @@ Log out: To log out of your account, click the "Log Out" button on the forum pag
  * Micah Sharifi
  * Karina Morrison
   
-  ## Questions?
+  ## Screen Shots
+  
+  <img width="1871" alt="Signup" src="https://user-images.githubusercontent.com/106099150/235553083-0148a76a-dce7-48da-8539-25e8aab6a407.png">
+
+  
+  <img width="1865" alt="Login" src="https://user-images.githubusercontent.com/106099150/235553105-467e282c-06ab-4ca1-9754-745faecd5416.png">
 
 ## License
 No-Politics-In-Space is licensed under the MIT License. See LICENSE for more information.
