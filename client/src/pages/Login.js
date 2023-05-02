@@ -6,8 +6,7 @@ import { LOGIN_USER } from '../utils/mutations';
 import Auth from '../utils/auth';
 
 
-import ewokcute from '../assets/img/ewokcute.png';
-import ewokcute1 from '../assets/img/ewokcute.png';
+import jedi from '../assets/img/jedi.jpg';
 
 
 const Login = (props) => {
@@ -48,8 +47,6 @@ const Login = (props) => {
   return (
     <main className="flex-row justify-center mb-4">
       <div className="col-12 col-lg-10">
-        <img src={ewokcute} alt="" className="ewokRight" />
-        <img src={ewokcute1} alt="" className="ewok1Left" />
         <div className="card">
           <h4 className="card-header bg-dark text-light p-2">Login</h4>
           <div className="card-body">
@@ -93,6 +90,9 @@ const Login = (props) => {
             )}
           </div>
         </div>
+      </div>
+      <div className="pic">
+        <img src={jedi} alt="" className="jedi" />
       </div>
     </main>
   );
